@@ -21,7 +21,13 @@ let newArr = []
 function displayLength(){
     let count = document.getElementById('countLength')
     let data1 = localStorage.getItem('list')
-    count.innerText = data1.split(',').length
+    if(data1){
+        console.log(data1.split(',').length)
+        count.innerText = data1.split(',').length
+    }else{
+        count.innerText = 0
+    }
+    
 }
 
 function maintainList(i){
@@ -42,11 +48,11 @@ function getRandomData(){
     }else{
         let ele = document.querySelector('#selected-name');
         ele.innerText = "Array is Empty"
-        let count = document.getElementById('countLength')
-        count.innerText = 0
     }
     
 }
 
 let btn = document.querySelector("#randomBtn")
 btn.addEventListener('click',getRandomData)
+
+
