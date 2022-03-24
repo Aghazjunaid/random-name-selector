@@ -16,6 +16,7 @@ let data = [
     "Rishabh"
 ]
 
+displayLength()
 
 let newArr = []
 function displayLength(){
@@ -29,6 +30,7 @@ function displayLength(){
     }
     
 }
+
 
 function maintainList(i){
     newArr.push(data[i])
