@@ -16,7 +16,6 @@ let data = [
     "Rishabh"
 ]
 
-displayLength()
 
 let newArr = []
 function displayLength(){
@@ -31,6 +30,7 @@ function displayLength(){
     
 }
 
+displayLength()
 
 function maintainList(i){
     newArr.push(data[i])
@@ -49,7 +49,7 @@ function getRandomData(){
         maintainList(index)
     }else{
         let ele = document.querySelector('#selected-name');
-        ele.innerText = "Array is Empty"
+        ele.innerText = "List is Empty"
     }
     
 }
